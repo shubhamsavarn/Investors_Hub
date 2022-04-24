@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}"/>
+</head>
+<body>
+    <section class="login">
+		<div class="login_box">
+			<div class="left">
+				<div class="top_link"><a href="{% url 'home' %}"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Return home</a></div>
+				<div class="contact">
+                    <form action="" method="POST">
+                        <img src="{% static 'images/Profile-login.png' %}" class="prof">
+                        <h3>SIGN IN</h3>
+                        {% csrf_token %}
+                        {% for x in fm1 %}
+                        {{x}}<br>
+                        {% endfor %}
+                        <button type="submit" class="submit">Login</button>
+                        {% if messages %}
+                        <ul class="messages">
+                        {% for message in messages %}
+                        <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
+                        {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </form>
+                </div>
+			</div>
+			<div class="right">
+				<div class="right-text">
+                </div>
+				<div class="right-inductor">
+                    <button class="loginBtn loginBtn--facebook">
+                        Login with Facebook
+                    </button>
+                    <li class="loginBtn loginBtn--google" ><a href="">Login with Google</a>
+                    </li>
+                </div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

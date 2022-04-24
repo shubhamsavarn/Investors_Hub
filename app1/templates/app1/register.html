@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/register.css' %}"/>
+    <title>Document</title>
+</head>
+<body>
+    <div id="login-box">
+        <div class="left">
+          <h1>Sign up</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {% for x in fm1 %}
+        {{x}}
+        {% endfor %}
+        <input type="submit" name="signup_submit" value="Sign me up" />
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li  {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </form>
+    <p>Already have an account?<a class = "hes" href="{% url 'login' %}">LogIn</a><p>
+       </div>
+    <div class="right">
+        <span class="loginwith">Sign in with<br />social network</span>
+        <button class="social-signin facebook">Log in with facebook</button>
+        <!--<button class="social-signin twitter">Log in with Twitter</button> -->
+        <!--<button class="social-signin google">Log in with Google+</button> -->
+      </div>
+      <div class="or">OR</div>
+    </div>
+    
+</body>
+</html>

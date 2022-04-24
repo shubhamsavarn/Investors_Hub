@@ -1,0 +1,7 @@
+{% extends "app1/home.html" %}
+{% block content%}
+<li class="nav-btn"><a href="{% url 'login' %}">LogOut</a></li>
+{% endblock content%}
+{% block title %}
+<a href="{% url 'userprofile' %}"class="register-btn">Profile</a>
+{% endblock title %}

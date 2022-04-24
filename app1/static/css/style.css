@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.header-top {
+    float: left;
+    width: 100%;
+    padding: 7px 0;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 1;
+    color: white;
+}
+.container{
+    color: white;
+}
+.const{
+    color:red;
+    background-image: url("images/apartment.png");
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+img.lgo{
+    width: 25px;
+    cursor: pointer;
+    border-radius: 120px;
+}
+.logo {
+    width: 112px;
+    cursor: pointer;
+    border-radius: 120px;
+    opacity: 0.7;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin:10px 30px;
+}
+.nav-links li a{
+    text-decoration:none;
+    color:white;
+}
+.register-btn{
+    background-color: #fff;
+    color:#000;
+    padding:8px 20px;
+    border-radius: 33px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav-btn{
+    background-color: black;
+    color:white;
+    padding:12px 20px;
+    border-radius: 33px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.container{
+    padding: 0 9%;
+}
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color:#fff;
+    text-align: center;
+    padding-top:22%;
+}
+.search-bar{
+    background: #fff;
+    margin: 30px auto;
+    width: 70%;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search-bar form input{
+    display:block;
+    border: none;
+    outline:none;
+    background: transparent;
+}
+.search-bar form button{
+    background: #ff5361;
+    width:55px;
+    height: 55px;
+    border-radius: 50%;
+    border:0;
+    outline:none;
+    cursor:pointer;
+
+}
+.search-bar form button img{
+    width:15px;
+    margin-top: 7px;
+}
+.location-input{
+    flex:1;
+}
+.search-bar form label{
+    font-weight: 600;
+}
+.sub-title{
+    margin:50px 0 20px;
+    font-size:2.2vw;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+}
+.exclusive{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap:30px;
+}
+.exclusive div img{
+    width:100%;
+    border-radius: 13px;
+    height: 190px;
+
+}
+.exclusive div{
+    position: relative;
+}
+.exclusive div span{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color:black;
+}
+.exclusives{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap:30px;
+}
+.exclusives div img{
+    width:100%;
+    border-radius: 13px;
+    height: 190px;
+
+}
+.exclusives div{
+    position: relative;
+}
+.exclusives div span{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color:black;
+}
+/*----------------------------------Featured project -----------------*/
+.sub-class{
+    background-color:white;
+}
+.feautred{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap:120px;
+    margin-bottom: 60px;;
+}
+.feautred div img{
+    width: 100%;
+    border-radius: 13px;
+
+}
+.feautred h3{
+    font-weight: 600;
+    margin-top: 10px;
+    color:grey;
+}
+.cta{
+    margin: 80px 0;
+    background-image: linear-gradient(to right,#3f2321,transparent),url(images/banner-2.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    padding: 5%;
+    color:white;
+}
+.cta h3{
+    font-size: 3vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+    margin-top: 2px;
+}
+.cta p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.cta-btn{
+    background: #ff5361;
+    color:white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 9px;
+    margin-top:20px;
+    display: inline-block;
+}
